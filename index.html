@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Cats Info</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slim-select@latest/dist/slimselect.min.css"
+    />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <select class="breed-select"></select>
+    <p class="loader">Loading data, please wait...</p>
+    <p class="error">Ooops! Something went wrong! Try reloading the page!</p>
+    <div class="cat-info"></div>
+
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
